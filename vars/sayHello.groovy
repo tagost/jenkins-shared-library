@@ -15,7 +15,7 @@ def call(String name = 'human') {
       }
       steps {
         sh "echo ${BRANCH_NAME}"
-        sh "echo ${BRANCH_NAME}"
+        sh "echo ${COMMIT}"
       }
     }
 
