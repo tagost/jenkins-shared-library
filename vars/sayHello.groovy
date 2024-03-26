@@ -16,9 +16,15 @@ def call(String name = 'human') {
       steps {
         sh "echo ${BRANCH_NAME}"
         sh "echo ${COMMIT}"
+        deploy()
       }
     }
 
   }
 }
+}
+
+def deploy(){
+  sh "echo soy una funcion"
+
 }
